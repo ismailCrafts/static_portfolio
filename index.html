@@ -1,0 +1,373 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="mediaqueries.css" />
+  </head>
+  <body>
+    <nav id="desktop-nav">
+      <div class="logo"> &lt;ismail/&gt; </div>
+      <div>
+        <ul class="nav-links">
+          <li><a href="#about">About</a></li>
+          <li><a href="#experience">Skills</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </div>
+    </nav>
+    <nav id="hamburger-nav">
+      <div class="logo">Md Ismail Bhuyan</div>
+      <div class="hamburger-menu">
+        <div class="hamburger-icon" onclick="toggleMenu()">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+        <div class="menu-links">
+          <li><a href="#about" onclick="toggleMenu()">About</a></li>
+          <li><a href="#experience" onclick="toggleMenu()">Experience</a></li>
+          <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
+          <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
+        </div>
+      </div>
+    </nav>
+    <section id="profile">
+      <div class="section__pic-container_1">
+        <img src="./assets/profile-pic.png" alt="Md ismailBhuyan profile picture" />
+      </div>
+      <div class="section__text_1">
+        <p class="section__text__p1">Hello, I'm</p>
+        <h1 class="title">Md Ismail Bhuyan</h1>
+        <p class="section__text__p2">Backend Developer(Django)</p>
+        <p><i>"Eager to grow through real projects and an internship where I can learn, contribute, and level up my backend skills."</i></i></p>
+        <br>
+        <div class="btn-container">
+          <button
+            class="btn btn-color-2"
+            onclick="window.open('./assets/resume-example.pdf')"
+          >
+            Download CV
+          </button>
+          <button class="btn btn-color-1" onclick="location.href='#contact'">
+            Contact Info
+          </button>
+        </div>
+        <div id="socials-container">
+          <img
+            src="./assets/linkedin.png"
+            alt="My LinkedIn profile"
+            class="icon"
+            onclick="location.href='https://www.linkedin.com/in/dev-mdismail/'"
+          />
+          <img
+            src="./assets/github.png"
+            alt="My Github profile"
+            class="icon"
+            onclick="location.href='https://github.com/ismailCrafts'"
+          />
+        </div>
+      </div>
+    </section>
+    <section id="about">
+      <p class="section__text__p1">Get To Know More</p>
+      <h1 class="title">About Me</h1>
+      <div class="section-container">
+        <div class="section__pic-container">
+          <img
+            src="./assets/about-pic.png"
+            alt="Profile picture"
+            class="about-pic"
+          />
+        </div>
+        <div class="about-details-container">
+          <div class="about-containers">
+            <div class="details-container">
+              <img
+                src="./assets/education.png"
+                alt="education icon"
+                class="icon"
+              />
+              <h3>Education</h3>
+              <p>Diploma in Engineering <br> 
+                CST | Session 21-22 | Ongoing <br>
+                Daffodil Polytechnic Institute, Daffodil Group</p>
+            </div>
+            <div class="details-container">
+              <img
+                src="./assets/education.png"
+                alt="Education icon"
+                class="icon"
+              />
+              <h3>Education</h3>
+              <p> Secondary School Certificate <br />
+                Science Group | Session 19-20 <br>
+                Khilgaon School & College, Dhaka-1219 </p>
+            </div>
+          </div>
+          <div class="text-container">
+            <p>
+              I’m an aspiring backend developer with a growing foundation in 
+              <b>Python</b>, <b>Django</b>, and <b>Django REST Framework</b>. 
+              Along the way, I’ve also picked up the basics of <b>HTML</b>, <b>CSS</b>, and <b>Bootstrap</b>, 
+              which helps me understand how the backend and frontend connect. 
+              Right now, I’m focused on improving my backend skills through hands-on practice and real projects. 
+              I’m seeking an <b>internship</b> where I can contribute to a team, learn from experienced developers, 
+              and continue building my path toward <b>becoming a skilled professional</b>.
+            </p>
+
+          </div>
+        </div>
+      </div>
+      <img
+        src="./assets/arrow.png"
+        alt="Arrow icon"
+        class="icon arrow"
+        onclick="location.href='#experience'"
+      />
+    </section>
+    <section id="experience">
+      <p class="section__text__p1">Check Out My</p>
+      <h1 class="title">Skills</h1>
+      <div class="experience-details-container">
+        <div class="about-containers">
+          <div class="details-container">
+            <h2 class="experience-sub-title">Frontend Development</h2>
+            <div class="article-container">
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>HTML</h3>
+                  <!--<p>Basics</p>-->
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>CSS</h3>
+                  <!--<p>Basics</p>-->
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Bootstrap</h3>
+                  <!--<p>Basics</p>-->
+                </div>
+              </article>
+            </div>
+          </div>
+          <div class="details-container">
+            <h2 class="experience-sub-title">Backend Development</h2>
+            <div class="article-container">
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Python</h3>
+                  <!--<p>Basics</p>-->
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Django</h3>
+                  <!--<p>Basics</p>-->
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Django REST framework</h3>
+                  <!--<p>Basics</p>-->
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>PostgreSQL</h3>
+                  <!--<p>Basics</p>-->
+                </div>
+              </article>
+            </div>
+          </div>
+          <p style="margin: 0; font-size: 1rem;">
+            I may just be <b>starting my journey in backend development</b>, but I’m
+            <b>not standing still</b>. Every day, I’m building my skills in
+            <b>Python, Django, and databases</b> — <b>step by step, project by project</b>.
+            I believe <b>growth comes from persistence</b>, and I’m
+            <b>committed to turning my passion into expertise</b>.
+            I may be at the beginning now, but I’m <b>driven</b> to become an
+            <b>extraordinary developer</b> who <b>learns fast, adapts quickly, and never stops improving</b>.
+          </p>
+        </div>
+      </div>
+      <img
+        src="./assets/arrow.png"
+        alt="Arrow icon"
+        class="icon arrow"
+        onclick="location.href='#projects'"
+      />
+    </section>
+
+    <section id="projects">
+      <p class="section__text__p1">Browse My Recent</p>
+      <h2 class="title">My Projects</h2>
+
+      <div class="section-container">
+        <div class="article-container">
+          <div class="details-container">
+            <img src="./assets/project-1.png" alt="Project 1" class="project-img" />
+            <div class="project-bottom">
+              <h2 class="project-title">CRM Project</h2>
+              <p class="project-description">
+                A simple CRM system to manage clients, track interactions, and organize data with ease using Python and Django.
+              </p>
+              <div class="btn-container">
+                <button class="btn btn-color-1" onclick="location.href='https://github.com/ismailCrafts/CRM-Project'">Github</button>
+                <button class="btn btn-color-2" onclick="location.href='https://www.linkedin.com/posts/dev-mdismail_just-wrapped-up-building-my-crm-project-activity-7363056180144869376-f6SE?utm_source=social_share_send&utm_medium=member_desktop_web&rcm=ACoAAF1aTukB8Uj8oCyjZp1p15fjKP5YP5hTnC4'">Live Demo</button>
+              </div>
+            </div>
+          </div>
+
+          <div class="details-container">
+            <img src="./assets/project-2.png" alt="Project 2" class="project-img" />
+            <div class="project-bottom">
+              <h2 class="project-title">To-Do Project</h2>
+              <p class="project-description">
+                A lightweight To-Do app for creating, updating, and organizing daily tasks with a clean and simple interface.
+              </p>
+              <div class="btn-container">
+                <button class="btn btn-color-1" onclick="location.href='https://github.com/ismailCrafts/TODO_Project'">Github</button>
+                <button class="btn btn-color-2" onclick="location.href='https://www.linkedin.com/posts/dev-mdismail_just-wrapped-up-building-my-todo-application-activity-7363081915093979136-ID-v?utm_source=share&utm_medium=member_desktop&rcm=ACoAAF1aTukB8Uj8oCyjZp1p15fjKP5YP5hTnC4'">Live Demo</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <img src="./assets/arrow.png" alt="Arrow icon" class="icon arrow" onclick="location.href='#contact'" />
+    </section>
+
+
+
+
+     
+    <section id="contact">
+      <p class="section__text__p1">Get in Touch</p>
+      <h1 class="title">Contact Me</h1>
+      <div class="contact-info-upper-container">
+        <div class="contact-info-container">
+          <img
+            src="./assets/email.png"
+            alt="Email icon"
+            class="icon contact-icon email-icon"
+          />
+          <p>
+            <a href="mailto:ismailbhuyan.dev@gmail.com">ismailbhuyan.dev@gmail.com</a>
+          </p>
+
+        </div>
+
+        <div class="contact-info-container">
+          <img
+            src="./assets/whatsapp.png"
+            alt="LinkedIn icon"
+            class="icon contact-icon"
+          />
+          <p><a href="https://wa.me/+8801989523616" target="_blank">WhatsApp</a></p>
+        </div>
+
+         <div class="contact-info-container">
+          <img
+            src="./assets/facebook.png"
+            alt="LinkedIn icon"
+            class="icon contact-icon"
+          />
+          <p><a href='https://web.facebook.com/IsmailBhuyan.016/'>Facebook</a></p>
+        </div>
+
+        <div class="contact-info-container">
+          <img
+            src="./assets/linkedin.png"
+            alt="LinkedIn icon"
+            class="icon contact-icon"
+          />
+          <p><a href='https://www.linkedin.com/in/dev-mdismail/'>LinkedIn</a></p>
+        </div>
+
+        <div class="contact-info-container">
+          <img
+            src="./assets/github.png"
+            alt="LinkedIn icon"
+            class="icon contact-icon"
+          />
+          <p><a href='https://github.com/ismailCrafts'>Github</a></p>
+
+        </div>
+      </div>
+
+    </section>
+    <footer>
+      <p>© 2025 Ismail Bhuyan | All Rights Reserved</p>
+    </footer>
+    <script src="script.js"></script>
+   
+    <a href="#top" id="upArrow">↑</a>
+
+
+    <script>
+      const upArrow = document.getElementById("upArrow");
+
+      window.addEventListener("scroll", () => {
+        // Show arrow only when at the bottom
+        if (window.innerHeight + window.scrollY >= document.body.offsetHeight - 10) {
+          upArrow.style.display = "block";
+        } else {
+          upArrow.style.display = "none";
+        }
+      });
+
+      // Smooth scroll to top
+      upArrow.addEventListener("click", (e) => {
+        e.preventDefault();
+        window.scrollTo({ top: 0, behavior: "smooth" });
+      });
+
+
+    </script>
+
+
+  </body>
+</html>
